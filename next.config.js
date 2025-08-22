@@ -1,7 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",  // <=== enables static exports
-  reactStrictMode: true,
-};
+// next.config.js
+const isProd = process.env.NODE_ENV === "production";
 
-module.exports = nextConfig;
+module.exports = {
+  output: "export", // enables static HTML export
+  basePath: isProd ? "/portfolioV2" : "",
+  assetPrefix: isProd ? "/portfolioV2/" : "",
+};
