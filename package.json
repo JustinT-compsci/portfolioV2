@@ -9,7 +9,7 @@
     "lint": "next lint",
     "knip": "knip",
     "export": "next export",
-    "deploy": "next build && next export && gh-pages -d out"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.0.1",

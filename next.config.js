@@ -1,8 +1,11 @@
 // next.config.js
-const isProd = process.env.NODE_ENV === "production";
-
-module.exports = {
-  output: "export", // enables static HTML export
-  basePath: isProd ? "/portfolioV2" : "",
-  assetPrefix: isProd ? "/portfolioV2/" : "",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',           // enables static HTML export
+  basePath: '/portfolioV@', // remove this if deploying to root domain
+  images: {
+    unoptimized: true,        // required for static export
+  },
 };
+
+module.exports = nextConfig;
