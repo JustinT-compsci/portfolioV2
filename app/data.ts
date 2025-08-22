@@ -48,7 +48,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Resume',
-    link: '/resume.pdf',
+    link: '/Resume.pdf',
     icon: FaRegFileLines,
     // className: "bg-[#02180b] text-white hover:bg-green-950",
  },
