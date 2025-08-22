@@ -1,8 +1,8 @@
 'use client'
 import { motion } from 'motion/react'
 import { Spotlight } from '@/components/ui/spotlight'
+import {SocialLink} from '@/components/ui/social-link'
 import { WORK_EXPERIENCE, EMAIL, SOCIAL_LINKS } from './data'
-import { cn } from '@/lib/utils'
 import { FaRegCopy } from 'react-icons/fa6'
 
 const VARIANTS_CONTAINER = {
@@ -19,38 +19,6 @@ const VARIANTS_SECTION = {
 }
 
 const TRANSITION_SECTION = { duration: 0.3 }
-
-export function SocialLink({
-  children,
-  icon: Icon,
-  link,
-  className,
-}: {
-  children: React.ReactNode
-  link: string
-  icon: React.ComponentType<any>
-  className?: string
-}) {
-  return (
-    <div className="relative overflow-hidden rounded-full bg-zinc-500/40 p-0.25">
-      {/* Spotlight border effect */}
-      <Spotlight className="from-zinc-100 via-zinc-200 to-zinc-50" size={64} />
-
-      {/* Actual button */}
-      <a
-        href={link}
-        target="_blank" 
-        className={cn(
-          'relative inline-flex items-center gap-1.5 rounded-full bg-zinc-950 px-2 py-1 text-sm text-zinc-100 transition-colors duration-200 hover:bg-zinc-900 hover:text-white',
-          className,
-        )}
-      >
-        {Icon && <Icon className="h-4 w-4 flex-shrink-0" />}
-        <span className="truncate">{children}</span>
-      </a>
-    </div>
-  )
-}
 
 ;<button className="rounded-xl border border-neutral-600 bg-white px-4 py-2 text-black transition duration-200 hover:bg-gray-100">
   Outline
