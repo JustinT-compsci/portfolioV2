@@ -2,7 +2,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',           // enables static HTML export
-  basePath: '/portfolioV@', // remove this if deploying to root domain
+  basePath: '/portfolioV2', // remove this if deploying to root domain
   images: {
     unoptimized: true,        // required for static export
   },
