@@ -21,7 +21,7 @@ import {
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-20"
+      className="space-y-18"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -184,7 +184,7 @@ export default function Personal() {
               <div className="relative flex w-full flex-row justify-between">
                 <div>
                   <h4 className="text-zinc-100">
-                    I am currently seeking new opportunities
+                    I am currently seeking new opportunities – 
                   </h4>
                   <span className="text-zinc-300">
                     Feel free to contact me at{' '}
