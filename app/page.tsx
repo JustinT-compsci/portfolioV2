@@ -31,7 +31,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-400">
+          <p className="text-zinc-300">
             I’m an Operations Systems Technical Lead with a strong background in
             data analysis, system validation, quality assurance and client
             relations. I’m currently seeking new opportunities in data-focused
@@ -55,29 +55,24 @@ export default function Personal() {
         </h3>
         <div className="flex flex-col space-y-3">
           {WORK_EXPERIENCE.map((job) => (
-            <div
-              className="relative overflow-hidden rounded-2xl bg-zinc-600/30 p-[1px]"
-              key={job.id}
-            >
-              <div className="relative h-full w-full rounded-[15px] bg-zinc-950 px-4 py-3">
+            <div className="relative h-full w-full rounded-[15px] bg-zinc-950 px-4 py-3 border border-zinc-800" key={job.id}>
                 <div className="relative flex w-full flex-row justify-between">
                   <div>
-                    <h4 className="text-zinc-100">{job.title}</h4>
+                    <h4 className="text-zinc-100 pr-3">{job.title}</h4>
                     <a
                       href={job.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-zinc-400 transition-colors duration-200 hover:text-zinc-100 sm:text-base"
+                      className="text-sm text-zinc-400 underline transition-colors duration-200 hover:text-zinc-100 sm:text-base"
                     >
                       {job.company}
                     </a>
                   </div>
-                  <p className="text-sm text-zinc-400 sm:text-base">
+                  <p className="text-sm text-zinc-400 sm:text-base whitespace-nowrap">
                     {job.start} - {job.end}
                   </p>
                 </div>
               </div>
-            </div>
           ))}
         </div>
       </motion.section>
@@ -152,20 +147,23 @@ export default function Personal() {
       >
         <h3 className="mb-3 text-lg font-medium text-zinc-100">Education</h3>
         <div className="flex flex-col space-y-2">
-          <div className="relative overflow-hidden rounded-2xl bg-zinc-600/30 p-[1px]">
-            <div className="relative h-full w-full rounded-[15px] bg-zinc-950 px-4 py-3">
+            <div className="relative h-full w-full rounded-[15px] bg-zinc-950 px-4 py-3 border border-zinc-800">
               <div className="relative flex w-full flex-row justify-between">
                 <div>
                   <h4 className="text-zinc-100">BSc. Computer Science</h4>
-                  <span className="text-sm text-zinc-400 sm:text-base">
+                                      <a
+                      href="https://ontariotechu.ca/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-zinc-400 underline transition-colors duration-200 hover:text-zinc-100 sm:text-base"
+                    >
                     Ontario Tech University
-                  </span>
+                    </a>
                 </div>
                 <p className="text-sm text-zinc-400 sm:text-base">
                   2018 - 2023
                 </p>
               </div>
-            </div>
           </div>
         </div>
       </motion.section>
@@ -177,12 +175,12 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium text-zinc-100">Connect</h3>
         <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl bg-green-600/30 p-[1px]">
+          <div className="relative overflow-hidden rounded-2xl bg-green-600/50 p-[1px]">
             <Spotlight
               className="from-zinc-100via-zinc-200 to-zinc-50"
               size={64}
             />
-            <div className="relative h-full w-full rounded-[15px] bg-[#02180b] px-4 py-3">
+            <div className="relative h-full w-full rounded-[15px] bg-[#022611] px-4 py-3">
               <div className="relative flex w-full flex-row justify-between">
                 <div>
                   <h4 className="text-zinc-100">
@@ -193,14 +191,14 @@ export default function Personal() {
                   </span>
                   <div className="inline-flex items-center gap-2">
                     <a
-                      className="text-zinc-300 underline"
+                      className="text-zinc-300 underline transition-colors duration-200 hover:text-zinc-100"
                       href={`mailto:${EMAIL}`}
                     >
                       {EMAIL}
                     </a>
                     <button
                       onClick={() => navigator.clipboard.writeText(EMAIL)}
-                      className="text-zinc-400 transition hover:text-zinc-200"
+                      className="text-zinc-400 transition-colors duration-200 hover:text-zinc-200"
                       title="Copy email"
                     >
                       <FaRegCopy className="h-4 w-4" />

@@ -39,7 +39,7 @@ export function Header() {
           as="p"
           preset="fade"
           per="char"
-          className="text-zinc-500"
+          className="text-zinc-400"
           delay={0.5}
         >
           Operations Systems Technical Lead
@@ -54,7 +54,7 @@ export function Header() {
             variants={VARIANTS_SECTION}
             transition={TRANSITION_SECTION}
           >
-            <div className="mt-4 inline-block rounded-full border border-green-600/50 bg-[#02180b] px-2 py-1 text-sm text-zinc-100">
+            <div className="mt-4 inline-block rounded-full border border-green-600/50 bg-[#022611] px-2 py-1 text-sm text-zinc-100">
               Actively seeking new opportunities
             </div>
           </motion.section>
