@@ -58,7 +58,7 @@ export default function Personal() {
             <div className="relative h-full w-full rounded-[15px] bg-zinc-950 px-4 py-3 border border-zinc-800" key={job.id}>
                 <div className="relative flex w-full flex-row justify-between">
                   <div>
-                    <h4 className="text-zinc-100 pr-3">{job.title}</h4>
+                    <h4 className="text-zinc-100 pr-4">{job.title}</h4>
                     <a
                       href={job.link}
                       target="_blank"

@@ -8,6 +8,7 @@ import {
 import { motion } from 'motion/react'
 // import localFont from "next/font/local";
 import { Syncopate } from 'next/font/google'
+import { GiRadarSweep } from 'react-icons/gi'
 import Link from 'next/link'
 
 const syncopate = Syncopate({
@@ -54,7 +55,8 @@ export function Header() {
             variants={VARIANTS_SECTION}
             transition={TRANSITION_SECTION}
           >
-            <div className="mt-4 inline-block rounded-full border border-green-600/50 bg-[#022611] px-2 py-1 text-sm text-zinc-100">
+            <div className="mt-4 inline-flex items-center gap-1 rounded-full border border-green-600/50 bg-[#022611] px-2 py-1 text-sm text-zinc-100">
+              <GiRadarSweep className="text-lg" />
               Actively seeking new opportunities
             </div>
           </motion.section>
