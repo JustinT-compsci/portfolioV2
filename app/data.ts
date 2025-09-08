@@ -42,7 +42,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     company: 'ONxpress Transportation Partners',
-    title: 'Operations Systems QA Analyst',
+    title: 'Operations Systems Senior QA Analyst',
     start: '2023',
     end: '2024',
     link: 'https://onxpress.com/',
@@ -50,7 +50,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     company: 'Thales Group',
-    title: 'Software Analyst Intern',
+    title: 'FPGA Software Analyst Intern',
     start: '2021',
     end: '2022',
     link: 'https://www.thalesgroup.com/en',
