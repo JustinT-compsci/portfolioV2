@@ -36,7 +36,7 @@ export function Header() {
             Justin Thomas
           </Link>
         </div>
-        <TextEffect
+        {/* <TextEffect
           as="p"
           preset="fade"
           per="char"
@@ -44,7 +44,10 @@ export function Header() {
           delay={0.5}
         >
           Operations Systems Technical Lead
-        </TextEffect>
+        </TextEffect> */}
+        <div className='text-zinc-100'>
+          Operations Systems Technical Lead
+        </div>
         <motion.main
           className="space-y-24"
           variants={VARIANTS_CONTAINER}
