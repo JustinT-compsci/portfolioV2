@@ -55,7 +55,7 @@ export default function Personal() {
         </h3>
         <div className="flex flex-col space-y-3">
           {WORK_EXPERIENCE.map((job) => (
-            <div className="relative h-full w-full rounded-[15px] bg-zinc-950 px-4 py-3 border border-zinc-800" key={job.id}>
+            <div className="relative h-full w-full bg-zinc-950 px-4 py-3 border border-[#322751]" key={job.id}>
                 <div className="relative flex w-full flex-row justify-between">
                   <div>
                     <h4 className="text-zinc-100 pr-4">{job.title}</h4>
