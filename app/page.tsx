@@ -175,7 +175,7 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium text-zinc-100">Connect</h3>
         <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl bg-green-600/50 p-[1px]">
+          <div className="relative overflow-hidden rounded-xl bg-green-600/50 p-[1px]">
             <Spotlight
               className="from-zinc-100via-zinc-200 to-zinc-50"
               size={64}
