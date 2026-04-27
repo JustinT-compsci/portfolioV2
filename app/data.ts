@@ -34,7 +34,7 @@ export type SocialLink = {
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'ONxpress | Metrolinx',
-    title: 'Operations Systems Technical Lead - QA and Data',
+    title: 'Operations Systems Technical Lead - Data and System Integration',
     start: '2024',
     end: '2025',
     link: 'https://onxpress.com/',
