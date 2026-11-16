@@ -33,6 +33,14 @@ export type SocialLink = {
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
+    company: 'iA Financial Group',
+    title: 'Business Development Specialist & AI Technical Writer',
+    start: '2026',
+    end: 'Present',
+    link: 'https://ia.ca/',
+    id: 'work4',
+  },
+  {
     company: 'ONxpress | Metrolinx',
     title: 'Operations Systems Technical Lead - Data and System Integration',
     start: '2024',
@@ -56,7 +64,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://www.thalesgroup.com/en',
     id: 'work3',
   },
-]
+];
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
